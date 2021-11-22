@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retorno de funções</title>
+</head>
+<body>
+    <script src="return.js"></script>
+    <h1>resultado</h1>
+
+    <!-- script -->
+    <script>
+        num1 = parseFloat(prompt('digite o primeiro valor'));
+        num2 = parseFloat(prompt('digite o segundo valor'))
+        resp = parseInt(prompt('digite 1 para somar \n digite 2 para subtrair \n digite 3 para multiplicar \n digite 4 para dividir'))
+        
+        if (resp == 1) {
+            document.write("<h2>soma resulta em: "+ soma(num1,num2))
+        } else if(resp == 2) {
+            document.write("<h2>subtracao resulta em: " + subtrair(num1,num2))
+        } else if (resp == 3) {
+            document.write("<h2>soma resulta em: "+ multiplicar(num1,num2))
+        } else if(resp == 4) {
+            document.write("<h2>soma resulta em:" + dividir(num1,num2))
+        } else {
+            document.write('<h1>digite um numero de 1 ate 4<h1>')
+        }
+    </script>
+
+    
+</body>
+</html>
